@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+$global-font: 'Nunito', sans-serif;
+$great-vibes: 'Great Vibes', cursive;
+
+// Media Queries
+$mq: (
+  mobile: 391px,
+  tablet: 768px,
+  laptop: 1024px,
+  desktop: 1280px,
+  infinity: 1440px,
+);
+
+// Warning
+
+$warning-colors: (
+  dangerStrong: #C82049,
+  neutralStrong: #11663C,
+  neutralDefault: #0EAB5D,
+);
+
+// Neutral Colors
+
+$neutral-colors: (
+  neutral: #F7FAFC,
+  weak: #D0D5DC,
+  default: #4F545C,
+  strong: #16191C,
+);
+
+// Brand
+
+$brand-colors: (
+  strong: #09112A,
+  default: #2861FD,
+  weak: #9FE7FF,
+);
+  
+  
+// Backgroud
+  
+$background-day: #F7FAFC;
+$background-night: #0b0c0d;

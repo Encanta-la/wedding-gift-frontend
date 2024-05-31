@@ -1,0 +1,27 @@
+
+@function get-font($weight) {
+  @return map-get($fonts, $weight);
+}
+
+@function color($set-colors, $color-value) {
+  @return map-get($set-colors, $color-value);
+}
+
+@function rem($size) {
+  @return calc($size / 10px * 1rem);
+}
+
+/**
+* Get spacing value
+* @param {number} key // variant index
+* @returns spacing value
+*/
+@function spacing($key) {
+  @if map-has-key($spacing, $key) {
+    @return map-get($spacing, $key);
+  }
+
+  @warn 'Unknown `#{$key}` in $spacing.';
+
+  @return null;
+}

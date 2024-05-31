@@ -1,0 +1,39 @@
+@mixin mq($mq-value) {
+  @media (min-width: map-get($mq, $mq-value)) {
+    @content;
+  }
+}
+
+@mixin font($size: rem(16px),
+$weight: 400,
+$line-height: rem(19),
+$color: color($common-colors, black),
+$transform: none,
+$decorator: none,
+$style: normal) {
+  color: $color;
+  font: $style $weight $size #{'/'} $line-height $global-font, roboto, sans-serif;
+  text-decoration: $decorator;
+  text-transform: $transform;
+}
+
+@mixin flex(
+  $justify-content: center,
+  $align-items: center,
+  $direction: row,
+) {
+  align-items: $align-items;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+}
+
+@mixin position($top, $right: $top, $bottom: $top, $left: $right) {
+  inset: $top $right $bottom $left;
+}
+
+@mixin block-width() {
+  float: none; 
+  margin: 0 auto;
+  max-width: 1440px; 
+}

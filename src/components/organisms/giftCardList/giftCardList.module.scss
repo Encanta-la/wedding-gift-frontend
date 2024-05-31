@@ -1,0 +1,7 @@
+.giftCardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}

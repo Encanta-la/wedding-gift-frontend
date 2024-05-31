@@ -1,0 +1,30 @@
+.giftCard {
+  @include flex(center, center, column);
+  border-radius: 13px;
+
+  header {
+    @include flex(center, center, column);
+    padding: 1rem 1rem 0 1rem;
+
+    border: 1px solid #000;
+    border-radius: 13px 13px 0 0;
+
+    p {
+      @include font(16px, 600, 22px, #000);
+      text-align: center;
+    }
+  }
+
+  footer {
+    @include flex(center, center, column);
+
+    width: 100%;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 0 0 13px 13px;
+
+    p {
+      @include font(16px, 600, 22px, #fff);
+    }
+  }
+}

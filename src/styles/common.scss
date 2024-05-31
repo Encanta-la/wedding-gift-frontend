@@ -1,0 +1,61 @@
+// add common style rules here
+
+// Titles
+
+@mixin display() {
+  @include font(32px, 700, 40px, color($neutral-colors, strong));
+
+  @include mq(tablet) {
+    @include font(56px, 700, 64px, color($neutral-colors, strong));
+  }
+}
+
+@mixin h1() {
+  @include font(40px, 500, 48px, color($neutral-colors, strong));
+}
+
+@mixin h2() {
+  @include font(32px, 500, 40px, color($neutral-colors, strong));
+}
+
+@mixin h3() {
+  @include font(28px, 500, 32px, color($neutral-colors, strong));
+}
+
+@mixin h3-bold() {
+  @include font(28px, 700, 32px, color($neutral-colors, strong));
+}
+
+@mixin h4() {
+  @include font(24px, 500, 28px, color($neutral-colors, strong));
+}
+
+@mixin h5() {
+  @include font(20px, 500, 24px, color($neutral-colors, strong));
+}
+
+@mixin h5-semibold() {
+  @include font(20px, 600, 24px, color($neutral-colors, strong));
+}
+
+@mixin h6() {
+  @include font(16px, 500, 20px, color($neutral-colors, strong));
+}
+
+@mixin h6-bold() {
+  @include font(16px, 700, 20px, color($neutral-colors, strong));
+}
+
+// Paragraphs
+
+@mixin body-lg() {
+  @include font(16px, 400, 28px, color($neutral-colors, default));
+}
+
+@mixin body-md() {
+  @include font(14px, 400, 24px, color($neutral-colors, default));
+}
+
+@mixin caption() {
+  @include font(12px, 400, 20px, color($neutral-colors, default));
+}
