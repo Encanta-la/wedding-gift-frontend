@@ -1,6 +1,7 @@
 .giftCard {
   @include flex(center, center, column);
   border-radius: 13px;
+  max-width: 320px;
 
   header {
     @include flex(center, center, column);
@@ -10,8 +11,16 @@
     border-radius: 13px 13px 0 0;
 
     p {
-      @include font(16px, 600, 22px, #000);
+      @include font(14px, 600, 16px, #000);
       text-align: center;
+
+      @include mq(mobile) {
+        font-size: 18px;
+      }
+    }
+
+    img {
+      width: 100%;
     }
   }
 
@@ -24,7 +33,15 @@
     border-radius: 0 0 13px 13px;
 
     p {
-      @include font(16px, 600, 22px, #fff);
+      @include font(14px, 600, 20px, #fff);
+
+      @include mq(mobile) {
+        font-size: 18px;
+      }
     }
+  }
+
+  .reservado {
+    background-color: rgb(110, 40, 40);
   }
 }

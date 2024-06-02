@@ -1,0 +1,12 @@
+.question {
+  @include flex(flex-start, center, row);
+  gap: 10px;
+
+  &__icon {
+
+  }
+
+  &__text {
+    @include font(12px, 500, 16px, #000)
+  }
+}

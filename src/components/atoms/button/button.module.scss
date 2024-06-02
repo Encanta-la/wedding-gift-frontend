@@ -1,0 +1,27 @@
+@mixin button() {
+  @include flex(center, center, row);
+  @include font(14px, 500, 18px, #fff);
+  border-radius: 13px;
+  padding: 12px;
+  width: 100%;
+}
+
+.primary {
+  @include button;
+  background-color: #000;
+  border: none;
+}
+
+.secondary {
+  @include button;
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.outline {
+  @include button;
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+}

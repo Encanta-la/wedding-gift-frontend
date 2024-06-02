@@ -1,0 +1,65 @@
+.detailModal {
+  @include flex(flex-start, center, column);
+
+  background-color: #fff;
+  border-radius: 21px;
+  box-shadow: 0px 0px 6.8px 1px rgba(0, 0, 0, 0.05);
+  padding: 26px 21px;
+  min-width: 308px;
+
+  gap: 21px;
+
+  header {
+    @include flex(flex-start, center, row);
+    gap: 10px;
+
+    h2 {
+      @include font(26px, 500, 21px, #000);
+      margin: 0;
+    }
+  }
+
+  .productDetail {
+    @include flex(space-between, flex-start, row);
+    padding: 13px;
+    border: 1px dashed #000;
+    border-radius: 13px;
+    gap: .5rem;
+    width: calc(100% - 26px);
+  
+    img {
+      width: 150px;
+    }
+  
+    main {
+      h3 {
+        @include font(18px, 500, 22px, #000);
+        margin: 13px 0;
+      }
+    }
+  
+    section {
+      @include flex(flex-start, flex-start, column);
+      gap: 4px;
+  
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .deliveryMethod {
+    @include flex(flex-start, flex-start, column);
+    width: 100%;
+    gap: 8px;
+
+    h3 {
+      @include font(16px, 500, 18px, #000);
+      margin: 0;
+    }
+
+    section {
+      width: 100%;
+    }
+  }
+}

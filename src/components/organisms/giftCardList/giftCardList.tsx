@@ -5,13 +5,17 @@ import styles from './giftCardList.module.scss';
 
 interface GiftCardListProps {
   giftCardList: GiftCardDto[];
+  onGiftClick: (gift: GiftCardDto) => void;
 }
 
-export default function GiftCardList({ giftCardList }: GiftCardListProps) {
+export default function GiftCardList({
+  giftCardList,
+  onGiftClick,
+}: GiftCardListProps) {
   return (
     <div className={styles.giftCardList}>
       {giftCardList.map((item, index) => (
-        <GiftCard key={index} giftCard={item} />
+        <GiftCard key={index} giftCard={item} onGiftClick={onGiftClick} />
       ))}
     </div>
   );
