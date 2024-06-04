@@ -12,6 +12,8 @@ import { GuestDto } from '@/types/guest.type';
 
 import GiftDetailModal from '@/components/organisms/giftDetailModal/giftDetailModal';
 
+import '@fontsource/great-vibes';
+
 export default function Home() {
   const [data, setData] = useState<GiftCardDto[] | undefined>(undefined);
   const [loading, setLoading] = useState(true);

@@ -1,4 +1,5 @@
 import styles from './header.module.scss';
+import '@fontsource/great-vibes';
 
 export default function Header() {
   return (

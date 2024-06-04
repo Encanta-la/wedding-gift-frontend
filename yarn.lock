@@ -41,6 +41,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
+"@fontsource/great-vibes@^5.0.21":
+  version "5.0.21"
+  resolved "https://registry.yarnpkg.com/@fontsource/great-vibes/-/great-vibes-5.0.21.tgz#3121862f590de7b8ec6324e0a58433e36dd5d9bc"
+  integrity sha512-5goapXa1++lJuMxgl4Rmy3HA/kdRsqysLfn8MU419StSW8Ju0ZgY9KFPCjQWEpH7xkxgjJ31puHWF51Y4XMEEQ==
+
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.14.tgz#d78e481a039f7566ecc9660b4ea7fe6b1fec442b"
