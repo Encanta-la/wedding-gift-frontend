@@ -37,7 +37,6 @@ export default function RootLayout({
         <meta property="twitter:title" content={metadata.title} />
         <meta property="twitter:description" content={metadata.description} />
         <meta property="twitter:image" content={metadata.image} />
-        <link rel="icon" href="/encanta.ico" sizes="any" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
