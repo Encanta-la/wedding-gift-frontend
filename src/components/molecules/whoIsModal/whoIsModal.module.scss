@@ -11,6 +11,7 @@
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   padding: 1rem;
+  width: calc(100% - 2rem);
 
   form {
     @include flex(center, center, column);
