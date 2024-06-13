@@ -1,7 +1,8 @@
 .giftCardList {
+  padding: 5px 10px;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr; /* Define duas colunas com largura igual */
+  grid-gap: 10px; /* Espaço entre as colunas */
+  align-items: stretch; /* Estica os itens para que todos tenham a mesma altura */
 }
