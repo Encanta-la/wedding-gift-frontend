@@ -85,7 +85,9 @@ export default function Home() {
     <>
       <Header />
       {loading ? (
-        <p>Carregando...</p>
+        <main className={styles.main}>
+          <p>Carregando...</p>
+        </main>
       ) : (
         <main className={styles.main}>
           <p>
